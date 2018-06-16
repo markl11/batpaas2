@@ -9,13 +9,13 @@
             "value":"sparkadmin"
         },
         "clusterLoginPassword":{
-            "value":"hdinsight2018!"
+            "value":"Hdinsight2018!"
         },
         "sshUserName":{
             "value":"sparksshadmin11"
         },
         "sshPassword":{
-            "value":"hdinsight2018!"
+            "value":"Hdinsight2018!"
         }
     }
 }
