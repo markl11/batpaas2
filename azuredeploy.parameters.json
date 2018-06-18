@@ -3,7 +3,7 @@
     "contentVersion":"1.0.0.0",
     "parameters":{
         "clusterName":{
-            "value":"markspark01"
+            "value":"markspark02"
         },
         "clusterLoginUserName":{
             "value":"sparkadmin"
