@@ -34,6 +34,13 @@
           "description": "The password must be at least 10 characters in length and must contain at least one digit, one non-alphanumeric character, and one upper or lower case letter."
         }
       },
+      "scriptActionUri": {
+        "type": "string",
+        "defaultValue": "https://github.com/markl11/batpaas2/blob/master/script-action.sh",
+        "metadata": {
+          "description": "A public http(s) uri that points to a script action which will set an environment variable on each node."
+        }
+      },
       "location": {
         "type": "string",
         "defaultValue": "[resourceGroup().location]",
@@ -74,7 +81,7 @@
           "osType": "Linux",
           "tier": "Standard",
           "clusterDefinition": {
-            "kind": "spark",
+            "kind": "hadoop",
             "configurations": {
               "gateway": {
                 "restAuthCredential.isEnabled": true,
