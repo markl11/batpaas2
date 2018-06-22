@@ -36,7 +36,7 @@
       },
       "scriptActionUri": {
         "type": "string",
-        "defaultValue": "https://github.com/markl11/batpaas2/blob/master/script-action.sh",
+        "defaultValue": "https://raw.githubusercontent.com/markl11/batpaas2/master/script-action.sh",
         "metadata": {
           "description": "A public http(s) uri that points to a script action which will set an environment variable on each node."
         }
