@@ -81,7 +81,7 @@
           "osType": "Linux",
           "tier": "Standard",
           "clusterDefinition": {
-            "kind": "hadoop",
+            "kind": "spark",
             "configurations": {
               "gateway": {
                 "restAuthCredential.isEnabled": true,
