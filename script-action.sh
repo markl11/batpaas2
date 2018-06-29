@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sqoop import --connect 'jdbc:sqlserver://mjlnet210618-1.database.windows.net:1433;database=mjlnet210618-1' --query "select * from SalesLT.Customer where \$CONDITIONS" --username mjlnetadmin --password 220618test! --split-by CustomerID --columns CustomerID,NameStyle,Title,FirstName,MiddleName,LastName,Suffix,CompanyName,SalesPerson,EmailAddress,Phone,PasswordHash,PasswordSalt,rowguid,ModifiedDate --target-dir 'wasb:///data/Adventureworks' --fields-terminated-by "\t" --lines-terminated-by '\n' --hive-import --create-hive-table --hive-table Adventureworks
+sqoop import --connect 'jdbc:sqlserver://asql-neu-batdemo-01.database.windows.net:1433;database=db-izcb3vdr43356' --query "select * from dbo.Products where \$CONDITIONS" --username AdminUser -P --target-dir 'wasb:///data/BATPaaSDemoDB1' --fields-terminated-by '\t' --lines-terminated-by '\n' -m 1
