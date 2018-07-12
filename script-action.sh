@@ -1,1 +1,2 @@
-sqoop import --connect 'jdbc:sqlserver://mjlnet210618-1.database.windows.net:1433;database=mjlnet210618-1' --query "select * from SalesLT.Customer where \$CONDITIONS" --username mjlnetadmin  -P --target-dir 'wasb:///data/Adventureworks' --fields-terminated-by '\t' --lines-terminated-by '\n' -m 1
+sqoop import --connect 'jdbc:sqlserver://asql-neu-batdemo-01-innov.database.windows.net:1433;database=db-mfyk6hdda5bxs' --query "select * from dbo.Products where \$CONDITIONS" --username AdminUser --password r0a5tb33f123! --target-dir 'wasb:///data/BATPaaSDemoDB1' --fields-terminated-by '\t' --lines-terminated-by '\n' -m 1
+
